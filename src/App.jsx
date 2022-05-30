@@ -1,4 +1,3 @@
-import { findAllByTestId } from '@testing-library/react';
 import React, {Component} from 'react';
 import './index.css'
 
@@ -32,6 +31,8 @@ class App extends Component {
     })
     // The event target (e.target) will be what we binded the input to, so in this case, it will be the form itself.
     // You can access the child elements by using e.target.children. This will give things like the label, inputs, etc. 
+
+    // accessing form data via the DOM (i.e. uncontrolled components)
     const formElements = e.target.children
     const emailInput = formElements[1]
     const passwordInput = formElements[3]
